@@ -10,8 +10,9 @@ import BrowserUsage from "../components/dashboard/BrowserUsage";
 import LineBarChart from "../components/dashboard/LineBarChart";
 import Data from "../data";
 
+
 import { cyan, pink, purple, orange, grey } from "@material-ui/core/colors";
-import { Grid } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 
 const cyan600 = cyan["600"];
 const pink600 = pink["600"];
@@ -41,8 +42,38 @@ const styles = {
 
 const DashboardPage = () => {
   return (
-    <div style={styles.content}>
-      <Grid container style={styles.container} spacing={3}>
+    <div style={{...styles.content, marginTop: 40}}>
+      
+      <div style={{padding: '10px 20%'}}>
+        <Typography variant="h3">
+          Customer Relationship Management
+        </Typography>
+        
+        <div
+          style={{display: 'flex', justifyContent: 'center'}}
+        >
+            <img 
+              src={require("../assets/img/crm.svg")}
+              width={300} 
+              alt="crm" 
+            />
+        </div>
+        <Typography variant="body1">
+          A Customer Management Relationship platform allows users to manage their tasks associated with some client/customer they are dealing with and let’s them keep track of the tasks, and keeps track of past communication among other features such as email integration. And we will try to make it as user-friendly and full of useful features as possible.
+        </Typography>
+
+        <Typography variant="h3">
+          Features
+        </Typography>
+        <Typography variant="body1">
+          <ul>
+            <li>Customer Database Management</li>
+            <li>Order Database Management</li>
+            <li>Product Database Management</li>
+          </ul>
+        </Typography>
+      </div>
+      {/* <Grid container style={styles.container} spacing={3}>
         <Grid item style={styles.cell} xs={12} md={3}>
           <InfoBox
             Icon={ShoppingCart}
@@ -82,7 +113,7 @@ const DashboardPage = () => {
         <Grid item style={styles.cell} xs={12} md={6}>
           <BrowserUsage data={Data.dashBoardPage.browserUsage} />
         </Grid>
-      </Grid>
+      </Grid> */}
     </div>
   );
 };

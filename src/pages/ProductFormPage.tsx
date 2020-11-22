@@ -100,6 +100,8 @@ class ProductFormPage extends React.Component<
   render() {
     const { categoryList, product, isFetching } = this.props;
 
+    console.log(this.props);
+
     return (
       <PageBase title="Product" navigation="Application / Product ">
         {isFetching ? (

@@ -59,8 +59,11 @@ export default function AppNavDrawer(props: Props) {
 
   const drawer = (
     <>
-      <AppUserMenu username={username} onSignoutClick={onSignoutClick} 
-      onChangePassClick={onChangePassClick} />
+      <AppUserMenu 
+        username={username} 
+        onSignoutClick={onSignoutClick} 
+        onChangePassClick={onChangePassClick} 
+      />
       <AppDrawerMenu />
     </>
   );

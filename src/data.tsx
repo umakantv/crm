@@ -16,7 +16,7 @@ const purple600 = purple['600'];
 
 const data = {
   menus: [
-    { text: "DashBoard", icon: <Assessment />, link: "/dashboard" },
+    { text: "Home", icon: <Assessment />, link: "/dashboard" },
     { text: "Customer", icon: <PermIdentity />, link: "/customers" },
     { text: "Order", icon: <ShoppingCartOutlinedIcon />, link: "/orders" },
     { text: "Product", icon: <StoreOutlinedIcon />, link: "/products" },

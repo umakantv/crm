@@ -35,7 +35,6 @@ const defaultProps = {
     "lastname",
     "email",
     "mobile",
-    "membership",
     "actions",
   ],
   headers: [
@@ -44,7 +43,6 @@ const defaultProps = {
     "Last Name",
     "Email",
     "Mobile",
-    "Membership",
     "Actions",
   ],
 };
@@ -258,7 +256,7 @@ class CustomerListPage extends React.Component<
               onClose={this.onSnackBarClose}
             >
               <Alert onClose={this.onSnackBarClose} severity="success">
-                The operation completed successfully !
+                The operation completed successfully!
               </Alert>
             </Snackbar>
             <DataTable

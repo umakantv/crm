@@ -177,7 +177,7 @@ class CustomerFormPage extends React.Component<
                       required
                     />
                   </Grid>
-                  <Grid item style={styles.cell} xs={12} md={4}>
+                  {/* <Grid item style={styles.cell} xs={12} md={4}>
                     <Field
                       variant="outlined"
                       component={TextField}
@@ -188,7 +188,7 @@ class CustomerFormPage extends React.Component<
                       name="rewards"
                       required
                     />
-                  </Grid>
+                  </Grid> */}
 
                   <Grid item style={styles.cell} xs={12} md={4}>
                     <Field
