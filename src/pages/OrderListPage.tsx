@@ -222,7 +222,7 @@ class OrderListPage extends React.Component<OrderListProps, OrderListState> {
 
     return (
       <PageBase
-        title={"Orders (" + orderList.length + ")"}
+        title={orderList.length  + " Orders"}
         navigation="React CRM / Order"
       >
         {isFetching ? (
@@ -231,14 +231,14 @@ class OrderListPage extends React.Component<OrderListProps, OrderListState> {
           </div>
         ) : (
           <div>
-            <Fab
+            {/* <Fab
               size="small"
               color="secondary"
               style={styles.fab}
               onClick={this.handleNewOrder}
             >
               <ContentAdd />
-            </Fab>
+            </Fab> */}
 
             <Fab
               size="small"

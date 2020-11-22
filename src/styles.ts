@@ -49,8 +49,9 @@ export const listPageStyle = {
   },
   fabSearch: {
     top: 'auto' as TODO,
-    right: 100,
+    right: 70,
     bottom: 20,
+    zIndex: 1000,
     left: 'auto' as TODO,
     position: 'fixed' as TODO,
     marginRight: 20,

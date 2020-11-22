@@ -9,7 +9,7 @@ type DeleteDialogProps = {
 };
 
 const DeleteDialog: React.FC<DeleteDialogProps> = ({ open, closeDialog, dialogTitle, dialogText }) => {
-  const title = dialogTitle && dialogTitle.length >0  ? dialogTitle: 'Action Alter';
+  const title = dialogTitle && dialogTitle.length >0  ? dialogTitle: 'Action Alert';
   const text =  dialogText && dialogText.length >0  ? dialogText:'Are you sure to delete this data?';
 
   const dialogButtons = [
